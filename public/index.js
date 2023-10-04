@@ -14,7 +14,12 @@ window.onload = () => {
    centerContent.appendChild(firstHeader);
 
 
-//2nd part: insert img
+   //2nd part: insert img
+
+
+   createKittenContainer();
+
+
 
 
 
