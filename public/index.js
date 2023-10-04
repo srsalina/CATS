@@ -44,8 +44,12 @@ const mainContent = () => {
 
    //2nd part: insert img
 
+   const catImg = document.createElement("img");
+   catImg.style.margin = "20px";
+   catImg.style.maxWidth = "750px";
 
-
+   const container = document.querySelector(".firstContainer");
+   container.appendChild(catImg);
 
 
 
@@ -106,6 +110,8 @@ const fetchImage = async () => {
 window.onload = async () => {
 
    initializePage();
+
+   // localStorage.setItem("url", kittenData[0].url);
 
 
 
