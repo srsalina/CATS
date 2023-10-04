@@ -1,10 +1,17 @@
 // * _____________________phase 1 _____________________*
 window.onload = () => {
 
-// insert div container for h1 and img connected to body
-
+   // insert div container for h1 and img connected to body
+   // console.log('TESTING TESTING!');
+   const centerContent = document.createElement('div');
+   centerContent.setAttribute("id", "firstHeader")
+   document.body.appendChild(centerContent);
 
 //1st part: insert h1
+   const firstHeader = document.createElement('h1');
+   firstHeader.innerText = "Kitten Pic";
+   firstHeader.setAttribute("class", "firstHeader");
+   centerContent.appendChild(firstHeader);
 
 
 //2nd part: insert img
