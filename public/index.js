@@ -5,6 +5,9 @@ const initializePage = () => {
 
    const firstContainer = document.createElement('section');
    firstContainer.setAttribute("class", "firstContainer");
+   firstContainer.style.display = "flex"
+   firstContainer.style.flexDirection = "column"
+   firstContainer.style.alignItems = "center"
 
 
 
@@ -45,6 +48,7 @@ const mainContent = () => {
    firstHeader.innerText = "Kitten Pic";
    firstHeader.setAttribute("class", "firstHeader");
    centerContent.appendChild(firstHeader);
+   firstHeader.style.alignSelf = "center"
 
 
    //2nd part: insert img
@@ -55,7 +59,9 @@ const mainContent = () => {
 
    img.style.margin = "20px";
    img.style.maxWidth = "750px";
+
    src.appendChild(img);
+
 
 
    container.appendChild(img);
