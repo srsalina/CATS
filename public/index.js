@@ -31,10 +31,14 @@ const initializePage = () => {
 const mainContent = () => {
    // insert div container for h1 and img connected to body
    // console.log('TESTING TESTING!');
+   const container = document.querySelector(".firstContainer");
 
    const centerContent = document.createElement('div');
-   centerContent.setAttribute("id", "firstHeader")
-   document.body.appendChild(centerContent);
+   centerContent.setAttribute("id", "centerContent");
+   // * id: firstHeader
+
+   // document.body.appendChild(centerContent);
+   container.appendChild(centerContent);
 
    //1st part: insert h1
    const firstHeader = document.createElement('h1');
@@ -42,14 +46,19 @@ const mainContent = () => {
    firstHeader.setAttribute("class", "firstHeader");
    centerContent.appendChild(firstHeader);
 
+
    //2nd part: insert img
 
-   const catImg = document.createElement("img");
-   catImg.style.margin = "20px";
-   catImg.style.maxWidth = "750px";
+   const img = document.createElement("img");
+   img.src = "https://d.newsweek.com/en/full/2015725/pair-cats-cuddling.jpg?w=1600&h=900&l=53&t=48&q=88&f=ccea0f40afb26fe46705726963c02c31";
+   const src = document.getElementById("centerContent");
 
-   const container = document.querySelector(".firstContainer");
-   container.appendChild(catImg);
+   img.style.margin = "20px";
+   img.style.maxWidth = "750px";
+   src.appendChild(img);
+
+
+   container.appendChild(img);
 
 
 
